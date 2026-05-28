@@ -1,0 +1,367 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - Campus Food Market</title>
+
+    <!-- GOOGLE FONT -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS FILE -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Campus Food Market
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="menu-toggle">
+                ☰
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- PAGE HERO -->
+
+    <section class="page-hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Our Delicious Ghanaian Meals</h1>
+
+            <p>
+                Choose from a wide range of authentic local dishes.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SEARCH SECTION -->
+
+    <section class="search-section">
+
+        <input 
+            type="text" 
+            id="searchInput"
+            placeholder="Search for meals..."
+            aria-label="Search meals"
+        >
+
+    </section>
+
+    <!-- CATEGORY FILTERS -->
+
+    <section class="filter-section">
+
+        <button class="filter-btn active">All</button>
+
+        <button class="filter-btn">Local Dishes</button>
+
+        <button class="filter-btn">Fast Food</button>
+
+        <button class="filter-btn">Grilled Meals</button>
+
+        <button class="filter-btn">Drinks</button>
+
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+
+    <section class="products-section">
+
+        <div class="products-container">
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <div class="product-badge">
+                    Popular
+                </div>
+
+                <img src="images/jollof-rice.jpg" alt="Jollof Rice">
+
+                <div class="product-content">
+
+                    <h3>Jollof Rice & Chicken</h3>
+
+                    <p>
+                        Delicious smoky Ghanaian jollof rice served with chicken.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <div class="price-cart">
+
+                        <span>GH₵ 45</span>
+
+                        <button 
+                            onclick="addToCart(
+                                'Jollof Rice & Chicken',
+                                45,
+                                'images/jollof-rice.jpg'
+                            )"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <img src="images/waakye.jpg" alt="Waakye">
+
+                <div class="product-content">
+
+                    <h3>Waakye Special</h3>
+
+                    <p>
+                        Waakye served with spaghetti, egg, fish and shito.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <div class="price-cart">
+
+                        <span>GH₵ 35</span>
+
+                        <button 
+                            onclick="addToCart(
+                                'Waakye Special',
+                                35,
+                                'images/waakye.jpg'
+                            )"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <img src="images/banku.jpg" alt="Banku and Tilapia">
+
+                <div class="product-content">
+
+                    <h3>Banku & Tilapia</h3>
+
+                    <p>
+                        Fresh tilapia grilled perfectly with hot pepper sauce.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <div class="price-cart">
+
+                        <span>GH₵ 70</span>
+
+                        <button 
+                            onclick="addToCart(
+                                'Banku & Tilapia',
+                                70,
+                                'images/banku.jpg'
+                            )"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <img src="images/fufu.jpg" alt="Fufu and Soup">
+
+                <div class="product-content">
+
+                    <h3>Fufu & Goat Soup</h3>
+
+                    <p>
+                        Soft pounded fufu with spicy goat light soup.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <div class="price-cart">
+
+                        <span>GH₵ 60</span>
+
+                        <button 
+                            onclick="addToCart(
+                                'Fufu & Goat Soup',
+                                60,
+                                'images/fufu.jpg'
+                            )"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 5 -->
+
+            <div class="product-card">
+
+                <div class="product-badge">
+                    Hot
+                </div>
+
+                <img src="images/kelewele.jpg" alt="Kelewele">
+
+                <div class="product-content">
+
+                    <h3>Kelewele</h3>
+
+                    <p>
+                        Spicy fried ripe plantain with groundnuts.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                    <div class="price-cart">
+
+                        <span>GH₵ 20</span>
+
+                        <button 
+                            onclick="addToCart(
+                                'Kelewele',
+                                20,
+                                'images/kelewele.jpg'
+                            )"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 6 -->
+
+            <div class="product-card">
+
+                <img src="images/kenkey.jpg" alt="Kenkey and Fish">
+
+                <div class="product-content">
+
+                    <h3>Kenkey & Fish</h3>
+
+                    <p>
+                        Ga kenkey served with fried fish and pepper.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <div class="price-cart">
+
+                        <span>GH₵ 30</span>
+
+                        <button 
+                            onclick="addToCart(
+                                'Kenkey & Fish',
+                                30,
+                                'images/kenkey.jpg'
+                            )"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Campus Food Market. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+```

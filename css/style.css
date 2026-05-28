@@ -1,0 +1,745 @@
+/* ======================================
+   GLOBAL RESET
+====================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#0f0f0f;
+    color:white;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ======================================
+   NAVBAR (GLOBAL)
+====================================== */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#ffcc00;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ff9900;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* ======================================
+   HERO BASE (OVERLAY FIXED)
+====================================== */
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+}
+
+/* ======================================
+   HOME HERO
+====================================== */
+.hero{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero-video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    width:90%;
+}
+
+.hero-content h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.hero-btn{
+    background:#ff9900;
+    color:white;
+    padding:15px 40px;
+    border-radius:40px;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.hero-btn:hover{
+    background:#ffcc00;
+    color:black;
+}
+
+/* ======================================
+   SEARCH
+====================================== */
+.search-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.search-section h2{
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+#searchInput{
+    width:60%;
+    padding:18px;
+    border:none;
+    border-radius:50px;
+    outline:none;
+    font-size:16px;
+}
+
+/* ======================================
+   CATEGORIES
+====================================== */
+.categories{
+    padding:40px 8%;
+}
+
+.categories h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.category-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.category-card{
+    background:#1a1a1a;
+    width:300px;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+}
+
+.category-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.category-card h3{
+    padding:20px;
+    text-align:center;
+}
+
+/* ======================================
+   PRODUCTS (HOME)
+====================================== */
+.products{
+    padding:40px 8%;
+}
+
+.products h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.product-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.product-card{
+    background:#1a1a1a;
+    width:300px;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    transition:0.4s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    margin-top:20px;
+}
+
+.product-card p{
+    margin:15px 0;
+    color:#ffcc00;
+    font-size:20px;
+}
+
+.product-card button{
+    margin-bottom:20px;
+    padding:12px 30px;
+    border:none;
+    background:#ff9900;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.product-card button:hover{
+    background:#ffcc00;
+    color:black;
+}
+
+/* ======================================
+   PAGE HEROES (SCOPED FIX)
+====================================== */
+
+/* PRODUCTS / GENERIC HERO */
+.page-hero,
+.cart-hero,
+.services-hero,
+.about-hero,
+.contact-hero{
+    height:60vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-size:cover;
+    background-position:center;
+}
+
+/* individual backgrounds */
+.page-hero{ background:url('../images/fast-food.jpg'); }
+.cart-hero{ background:url('../images/kelewele.jpg'); }
+.services-hero{ background:url('../images/grilled-food.jpg'); }
+.about-hero{ background:url('../images/fresh-food.jpg'); }
+.contact-hero{ background:url('../images/delivery-bike.jpg'); }
+
+/* shared hero text */
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    width:90%;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+}
+
+/* ======================================
+   PRODUCTS PAGE GRID
+====================================== */
+.products-section{
+    padding:60px 8%;
+}
+
+.products-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:30px;
+}
+
+/* ======================================
+   CART
+====================================== */
+.cart-section{
+    padding:80px 8%;
+}
+
+.cart-container{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+}
+
+.cart-items{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.cart-item{
+    background:#1a1a1a;
+    border-radius:20px;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.cart-item img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.item-details p{
+    color:#ffcc00;
+}
+
+.quantity-controls button{
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background:#ff9900;
+    color:white;
+    cursor:pointer;
+}
+
+.item-total{
+    color:#ffcc00;
+    font-size:20px;
+}
+
+.remove-btn{
+    padding:10px 20px;
+    border:none;
+    background:red;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+/* CART SUMMARY */
+.cart-summary{
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:20px;
+}
+
+.summary-item,
+.summary-total{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.summary-total{
+    color:#ffcc00;
+    font-size:22px;
+}
+
+/* CHECKOUT BUTTON */
+.checkout-btn{
+    width:100%;
+    padding:18px;
+    border:none;
+    background:#ff9900;
+    color:white;
+    border-radius:40px;
+    cursor:pointer;
+}
+
+.checkout-btn:hover{
+    background:#ffcc00;
+    color:black;
+}
+
+/* ======================================
+   SOCIAL
+====================================== */
+.social-feed{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.social-icons a{
+    margin:0 15px;
+    color:white;
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+footer{
+    background:#111;
+    padding:30px;
+    text-align:center;
+}
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+
+/* TABLET */
+@media(max-width:900px){
+    .cart-container{
+        grid-template-columns:1fr;
+    }
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:80px;
+        right:0;
+        width:100%;
+        background:#111;
+        padding:20px;
+        text-align:center;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    #searchInput{
+        width:100%;
+    }
+
+    .cart-item{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+}
+
+
+/* =========================
+   BASE RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffcc00;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* =========================
+   CHECKOUT HERO
+========================= */
+
+.checkout-hero {
+    height: 40vh;
+    background: url('../images/checkout.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout-hero .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.checkout-hero .hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.checkout-hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.checkout-hero p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* =========================
+   CHECKOUT SECTION
+========================= */
+
+.checkout-section {
+    padding: 120px 8% 60px;
+}
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* =========================
+   FORM BOX
+========================= */
+
+.checkout-form {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.checkout-form h2 {
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background: #111;
+    color: #fff;
+}
+
+/* =========================
+   ORDER SUMMARY
+========================= */
+
+.order-summary {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    height: fit-content;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.order-summary h2 {
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffcc00;
+}
+
+/* =========================
+   CHECKOUT BUTTON
+========================= */
+
+.place-order-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 18px;
+    border: none;
+    border-radius: 40px;
+    background: #ff9900;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.place-order-btn:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* =========================
+   PAYMENT OPTIONS
+========================= */
+
+.payment-methods {
+    margin-top: 20px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-hero h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: #111;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

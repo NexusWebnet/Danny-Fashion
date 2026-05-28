@@ -1,0 +1,321 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campus Food Market</title>
+
+    <!-- GOOGLE FONT -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Campus Food Market
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="menu-toggle">
+                ☰
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <video autoplay muted loop playsinline class="hero-video">
+
+            <source src="videos/food-video.mp4" type="video/mp4">
+
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Authentic Ghanaian Meals Delivered Fast</h1>
+
+            <p>
+                Enjoy your favorite local dishes delivered hot and fresh to your doorstep.
+            </p>
+
+            <a href="products.html" class="hero-btn">
+                Order Now
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SEARCH SECTION -->
+
+    <section class="search-section">
+
+        <h2>Search Meals</h2>
+
+        <input 
+            type="text" 
+            id="searchInput"
+            placeholder="Search for Ghanaian food..."
+            aria-label="Search meals"
+        >
+
+    </section>
+
+    <!-- FOOD CATEGORIES -->
+
+    <section class="categories">
+
+        <h2>Popular Food Categories</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+
+                <img src="images/local-food.jpg" alt="Local Ghanaian Food">
+
+                <h3>Local Dishes</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                <img src="images/grilled-food.jpg" alt="Grilled Food">
+
+                <h3>Grilled Meals</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                <img src="images/fast-food.jpg" alt="Fast Food">
+
+                <h3>Fast Food</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCTS -->
+
+    <section class="products">
+
+        <h2>Popular Ghanaian Meals</h2>
+
+        <div class="product-container">
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <img src="images/jollof-rice.jpg" alt="Jollof Rice and Chicken">
+
+                <h3>Jollof Rice & Chicken</h3>
+
+                <p>GH₵ 45</p>
+
+                <button 
+                    onclick="addToCart(
+                        'Jollof Rice & Chicken',
+                        45,
+                        'images/jollof-rice.jpg'
+                    )"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <img src="images/waakye.jpg" alt="Waakye Special">
+
+                <h3>Waakye Special</h3>
+
+                <p>GH₵ 35</p>
+
+                <button 
+                    onclick="addToCart(
+                        'Waakye Special',
+                        35,
+                        'images/waakye.jpg'
+                    )"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <img src="images/banku.jpg" alt="Banku and Tilapia">
+
+                <h3>Banku & Tilapia</h3>
+
+                <p>GH₵ 60</p>
+
+                <button 
+                    onclick="addToCart(
+                        'Banku & Tilapia',
+                        60,
+                        'images/banku.jpg'
+                    )"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <img src="images/fufu.jpg" alt="Fufu and Light Soup">
+
+                <h3>Fufu & Light Soup</h3>
+
+                <p>GH₵ 55</p>
+
+                <button 
+                    onclick="addToCart(
+                        'Fufu & Light Soup',
+                        55,
+                        'images/fufu.jpg'
+                    )"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- PRODUCT 5 -->
+
+            <div class="product-card">
+
+                <img src="images/kebab.jpg" alt="Beef Kebab">
+
+                <h3>Beef Kebab</h3>
+
+                <p>GH₵ 25</p>
+
+                <button 
+                    onclick="addToCart(
+                        'Beef Kebab',
+                        25,
+                        'images/kebab.jpg'
+                    )"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- PRODUCT 6 -->
+
+            <div class="product-card">
+
+                <img src="images/fried-rice.jpg" alt="Fried Rice and Chicken">
+
+                <h3>Fried Rice & Chicken</h3>
+
+                <p>GH₵ 40</p>
+
+                <button 
+                    onclick="addToCart(
+                        'Fried Rice & Chicken',
+                        40,
+                        'images/fried-rice.jpg'
+                    )"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SOCIAL MEDIA SECTION -->
+
+    <section class="social-feed">
+
+        <h2>Follow Us</h2>
+
+        <div class="social-icons">
+
+            <a href="#">Facebook</a>
+
+            <a href="#">Instagram</a>
+
+            <a href="#">Twitter</a>
+
+        </div>
+
+        <div class="feed-box">
+
+            Stay updated with our latest Ghanaian meals, student discounts and delivery promotions.
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Campus Food Market. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+```

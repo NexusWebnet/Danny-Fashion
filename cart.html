@@ -1,0 +1,144 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart - Campus Food Market</title>
+
+    <!-- GOOGLE FONT -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Campus Food Market
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="menu-toggle">
+                ☰
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="cart-hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Your Shopping Cart</h1>
+
+            <p>
+                Review your selected Ghanaian meals before checkout.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CART SECTION -->
+
+    <section class="cart-section">
+
+        <div class="cart-container">
+
+            <!-- DYNAMIC CART ITEMS -->
+
+            <div class="cart-items">
+
+                <!-- ITEMS WILL LOAD HERE FROM JAVASCRIPT -->
+
+            </div>
+
+            <!-- CART SUMMARY -->
+
+            <div class="cart-summary">
+
+                <h2>Cart Summary</h2>
+
+                <div class="summary-item">
+
+                    <span>Subtotal</span>
+
+                    <span id="subtotal">GH₵ 0</span>
+
+                </div>
+
+                <div class="summary-item">
+
+                    <span>Delivery Fee</span>
+
+                    <span>GH₵ 15</span>
+
+                </div>
+
+                <div class="summary-total">
+
+                    <span>Total</span>
+
+                    <span id="grandTotal">GH₵ 15</span>
+
+                </div>
+
+                <button class="checkout-btn" onclick="goToCheckout()">
+                     Proceed to Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Campus Food Market. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+```

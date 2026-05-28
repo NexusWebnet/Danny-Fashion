@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - Campus Food Market</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Campus Food Market
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+
+            </ul>
+
+            <div class="menu-toggle">☰</div>
+
+        </nav>
+
+    </header>
+
+    <!-- CHECKOUT SECTION -->
+
+    <section class="checkout-section">
+
+        <h1>Checkout</h1>
+
+        <div class="checkout-container">
+
+            <div class="order-summary">
+
+                <h2>Your Order</h2>
+
+                <div id="checkoutItems"></div>
+
+                <h3 id="checkoutTotal">Total: GH₵ 0</h3>
+
+            </div>
+
+            <div class="checkout-form">
+
+                <h2>Delivery Details</h2>
+
+                <form>
+
+                    <input type="text" placeholder="Full Name" required>
+
+                    <input type="text" placeholder="Phone Number" required>
+
+                    <input type="text" placeholder="Delivery Address" required>
+
+                    <button type="submit">Place Order</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
