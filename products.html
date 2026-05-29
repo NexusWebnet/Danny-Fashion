@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +6,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Products - Campus Food Market</title>
+    <title>Products - Nexus Fashion Store</title>
 
     <!-- GOOGLE FONT -->
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS FILE -->
-
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -22,24 +19,23 @@
 <body>
 
     <!-- NAVBAR -->
-
     <header>
 
         <nav class="navbar">
 
             <div class="logo">
-                Campus Food Market
+                Nexus Fashion
             </div>
 
             <ul class="nav-links">
 
                 <li><a href="index.html">Home</a></li>
 
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html">Shop</a></li>
 
                 <li><a href="cart.html">Cart</a></li>
 
-                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html">Collections</a></li>
 
                 <li><a href="about.html">About</a></li>
 
@@ -56,17 +52,16 @@
     </header>
 
     <!-- PAGE HERO -->
-
     <section class="page-hero">
 
         <div class="hero-overlay"></div>
 
         <div class="hero-content">
 
-            <h1>Our Delicious Ghanaian Meals</h1>
+            <h1>Shop Latest Fashion Trends</h1>
 
             <p>
-                Choose from a wide range of authentic local dishes.
+                Discover premium clothing, sneakers, and streetwear designed for your style.
             </p>
 
         </div>
@@ -74,73 +69,57 @@
     </section>
 
     <!-- SEARCH SECTION -->
-
     <section class="search-section">
 
         <input 
             type="text" 
             id="searchInput"
-            placeholder="Search for meals..."
-            aria-label="Search meals"
+            placeholder="Search clothes, sneakers, hoodies..."
+            aria-label="Search products"
         >
 
     </section>
 
     <!-- CATEGORY FILTERS -->
-
     <section class="filter-section">
 
         <button class="filter-btn active">All</button>
 
-        <button class="filter-btn">Local Dishes</button>
+        <button class="filter-btn">Men</button>
 
-        <button class="filter-btn">Fast Food</button>
+        <button class="filter-btn">Women</button>
 
-        <button class="filter-btn">Grilled Meals</button>
+        <button class="filter-btn">Streetwear</button>
 
-        <button class="filter-btn">Drinks</button>
+        <button class="filter-btn">Sneakers</button>
 
     </section>
 
     <!-- PRODUCTS SECTION -->
-
     <section class="products-section">
 
         <div class="products-container">
 
             <!-- PRODUCT 1 -->
-
             <div class="product-card">
 
-                <div class="product-badge">
-                    Popular
-                </div>
+                <div class="product-badge">Popular</div>
 
-                <img src="images/jollof-rice.jpg" alt="Jollof Rice">
+                <img src="images/hoodie.jpg" alt="Black Hoodie">
 
                 <div class="product-content">
 
-                    <h3>Jollof Rice & Chicken</h3>
+                    <h3>Premium Black Hoodie</h3>
 
-                    <p>
-                        Delicious smoky Ghanaian jollof rice served with chicken.
-                    </p>
+                    <p>High-quality oversized hoodie for streetwear style.</p>
 
-                    <div class="rating">
-                        ★★★★★
-                    </div>
+                    <div class="rating">★★★★★</div>
 
                     <div class="price-cart">
 
-                        <span>GH₵ 45</span>
+                        <span>GH₵ 250</span>
 
-                        <button 
-                            onclick="addToCart(
-                                'Jollof Rice & Chicken',
-                                45,
-                                'images/jollof-rice.jpg'
-                            )"
-                        >
+                        <button onclick="addToCart('Premium Black Hoodie', 250, 'images/hoodie.jpg')">
                             Add to Cart
                         </button>
 
@@ -151,34 +130,23 @@
             </div>
 
             <!-- PRODUCT 2 -->
-
             <div class="product-card">
 
-                <img src="images/waakye.jpg" alt="Waakye">
+                <img src="images/tshirt.jpg" alt="T-Shirt">
 
                 <div class="product-content">
 
-                    <h3>Waakye Special</h3>
+                    <h3>Oversized T-Shirt</h3>
 
-                    <p>
-                        Waakye served with spaghetti, egg, fish and shito.
-                    </p>
+                    <p>Comfortable cotton oversized streetwear tee.</p>
 
-                    <div class="rating">
-                        ★★★★★
-                    </div>
+                    <div class="rating">★★★★★</div>
 
                     <div class="price-cart">
 
-                        <span>GH₵ 35</span>
+                        <span>GH₵ 120</span>
 
-                        <button 
-                            onclick="addToCart(
-                                'Waakye Special',
-                                35,
-                                'images/waakye.jpg'
-                            )"
-                        >
+                        <button onclick="addToCart('Oversized T-Shirt', 120, 'images/tshirt.jpg')">
                             Add to Cart
                         </button>
 
@@ -189,34 +157,23 @@
             </div>
 
             <!-- PRODUCT 3 -->
-
             <div class="product-card">
 
-                <img src="images/banku.jpg" alt="Banku and Tilapia">
+                <img src="images/jeans.jpg" alt="Jeans">
 
                 <div class="product-content">
 
-                    <h3>Banku & Tilapia</h3>
+                    <h3>Classic Blue Jeans</h3>
 
-                    <p>
-                        Fresh tilapia grilled perfectly with hot pepper sauce.
-                    </p>
+                    <p>Slim-fit denim jeans with modern street style.</p>
 
-                    <div class="rating">
-                        ★★★★★
-                    </div>
+                    <div class="rating">★★★★★</div>
 
                     <div class="price-cart">
 
-                        <span>GH₵ 70</span>
+                        <span>GH₵ 180</span>
 
-                        <button 
-                            onclick="addToCart(
-                                'Banku & Tilapia',
-                                70,
-                                'images/banku.jpg'
-                            )"
-                        >
+                        <button onclick="addToCart('Classic Blue Jeans', 180, 'images/jeans.jpg')">
                             Add to Cart
                         </button>
 
@@ -227,34 +184,23 @@
             </div>
 
             <!-- PRODUCT 4 -->
-
             <div class="product-card">
 
-                <img src="images/fufu.jpg" alt="Fufu and Soup">
+                <img src="images/jacket.jpg" alt="Jacket">
 
                 <div class="product-content">
 
-                    <h3>Fufu & Goat Soup</h3>
+                    <h3>Denim Jacket</h3>
 
-                    <p>
-                        Soft pounded fufu with spicy goat light soup.
-                    </p>
+                    <p>Classic rugged denim jacket for all seasons.</p>
 
-                    <div class="rating">
-                        ★★★★★
-                    </div>
+                    <div class="rating">★★★★★</div>
 
                     <div class="price-cart">
 
-                        <span>GH₵ 60</span>
+                        <span>GH₵ 300</span>
 
-                        <button 
-                            onclick="addToCart(
-                                'Fufu & Goat Soup',
-                                60,
-                                'images/fufu.jpg'
-                            )"
-                        >
+                        <button onclick="addToCart('Denim Jacket', 300, 'images/jacket.jpg')">
                             Add to Cart
                         </button>
 
@@ -265,38 +211,25 @@
             </div>
 
             <!-- PRODUCT 5 -->
-
             <div class="product-card">
 
-                <div class="product-badge">
-                    Hot
-                </div>
+                <div class="product-badge">Hot</div>
 
-                <img src="images/kelewele.jpg" alt="Kelewele">
+                <img src="images/sneaker1.jpg" alt="Sneakers">
 
                 <div class="product-content">
 
-                    <h3>Kelewele</h3>
+                    <h3>White Sneakers</h3>
 
-                    <p>
-                        Spicy fried ripe plantain with groundnuts.
-                    </p>
+                    <p>Clean minimalist sneakers for everyday wear.</p>
 
-                    <div class="rating">
-                        ★★★★☆
-                    </div>
+                    <div class="rating">★★★★☆</div>
 
                     <div class="price-cart">
 
-                        <span>GH₵ 20</span>
+                        <span>GH₵ 350</span>
 
-                        <button 
-                            onclick="addToCart(
-                                'Kelewele',
-                                20,
-                                'images/kelewele.jpg'
-                            )"
-                        >
+                        <button onclick="addToCart('White Sneakers', 350, 'images/sneaker1.jpg')">
                             Add to Cart
                         </button>
 
@@ -307,34 +240,23 @@
             </div>
 
             <!-- PRODUCT 6 -->
-
             <div class="product-card">
 
-                <img src="images/kenkey.jpg" alt="Kenkey and Fish">
+                <img src="images/cap.jpg" alt="Cap">
 
                 <div class="product-content">
 
-                    <h3>Kenkey & Fish</h3>
+                    <h3>Streetwear Cap</h3>
 
-                    <p>
-                        Ga kenkey served with fried fish and pepper.
-                    </p>
+                    <p>Modern fitted cap for casual street style.</p>
 
-                    <div class="rating">
-                        ★★★★★
-                    </div>
+                    <div class="rating">★★★★★</div>
 
                     <div class="price-cart">
 
-                        <span>GH₵ 30</span>
+                        <span>GH₵ 80</span>
 
-                        <button 
-                            onclick="addToCart(
-                                'Kenkey & Fish',
-                                30,
-                                'images/kenkey.jpg'
-                            )"
-                        >
+                        <button onclick="addToCart('Streetwear Cap', 80, 'images/cap.jpg')">
                             Add to Cart
                         </button>
 
@@ -349,19 +271,16 @@
     </section>
 
     <!-- FOOTER -->
-
     <footer>
 
         <p>
-            © 2026 Campus Food Market. All Rights Reserved.
+            © 2026 Nexus Fashion Store. All Rights Reserved.
         </p>
 
     </footer>
 
     <!-- JAVASCRIPT -->
-
     <script src="js/script.js"></script>
 
 </body>
 </html>
-```
